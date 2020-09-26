@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8c3845;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+p {
+  font-family: 'Poppins' sans-serif;
+  line-height: normal;
+  margin-top: 10px;
+}
+h1 {
+  font-family: 'Abril Fatface';
+  letter-spacing: 1.5px;
+}
+h1::after {
+  content: '5,000 Rs';
+  border-bottom: 1px solid #ccc;
+  font-size: medium;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  margin: 2rem 0 0 0;
+}
+.container {
+  max-width: 60rem;
+  width: 100%;
+  margin: 6rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-group {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.btn-group .btn {
+  border: none;
+  background-color: #f0f8ff00;
+  -webkit-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.75);
+  transform: rotate(0deg);
+  transition: transform 0.5s ease-out;
+}
+
+.btn-group .btn:nth-child(even) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.btn-group .btn .btn-img {
+  width: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-group .btn:hover {
+  transform: rotate(360deg);
+}
+
+.btn-group .btn:focus {
+  border-top: 10px solid #333;
+  border: 2px solid #ccc;
+  background-color: #ccc;
+}
