@@ -13,7 +13,7 @@ chairs = [
   },
   {
     link: 'https://assets.codepen.io/1462889/ch4.png',
-    color: '#486378',
+    color: '#668ba6',
   },
   {
     link: 'https://assets.codepen.io/1462889/ch5.png',
@@ -29,9 +29,12 @@ chairs = [
 const body = document.querySelector('body');
 const btns = document.querySelectorAll('.btn');
 const chairImg = document.querySelector('.product');
+const cartBtn = document.querySelector('.add-to-cart');
+
 btns.forEach((btn, i) => {
   btn.addEventListener('click', () => {
     body.style.backgroundColor = chairs[i].color;
     chairImg.src = chairs[i].link;
+    cartBtn.style.backgroundColor = chairs[i].color;
   });
 });
